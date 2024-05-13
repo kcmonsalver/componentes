@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
+
+//import MenuC from './componentes/Menu';
+import Persona1 from './componentes/persona';
+//import { EjemploProp } from './componentes/persona';
+import {Contador} from './componentes/contador';
+import {Contador2} from './componentes/contador2';
+import { Estado } from './componentes/Estado';
+
+ 
+
+
 function App() {
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='App'>
+          
+          <Persona1 nombre = "alejandra" apellido = "solorzano" correo = "aleja@educativo.com"  direccion ="cra 81 f # 6816 "telefono = "315548974"   color="pink" />   
+    <Contador/>
+    <Contador2/>
+    <Estado/>
+    
+        </div>
   );
 }
+
+
 
 export default App;

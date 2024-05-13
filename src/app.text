@@ -1,0 +1,71 @@
+//import logo from './logo.svg';
+import './App.css';
+
+
+import MenuC from './componentes/Menu';
+import Footer from './componentes/Footer';
+
+function App() {
+
+    const nombre = <h1> Kristhian Monsalve</h1>
+    const correo = <p> camilo1452.cm@gmail.com </p>
+    const telefono = <p> 31544574854 </p>
+    const edad =<p>35</p>
+
+    const empleado = <div>{nombre} {correo} {telefono} {edad} </div>
+  return (
+    <div className='App'>
+          
+        <MenuC/>
+
+        {empleado}
+
+        <Footer/>
+    <PreguntarEmocion/>
+    <MostrarEmpleado/>
+    <EjemploProp nombre = "alejandra solorzano " correo = "aleja@educativo@gmail.com" telefono = "315548974" edad= "25"  color="pink" />
+        </div>
+  );
+}
+
+const PreguntarEmocion = ()=>{
+  const namel = <h2>Camilo </h2>
+  const lastname = <p>Monsalve</p>
+  return <div><h1>Como estas Hoy?</h1>{namel}{lastname}</div> 
+} 
+
+const MostrarEmpleado = ()=>{
+  return (
+    <div className='persona'>
+  <h3>Nombre: Camilo</h3>
+  <p>Edad: 26</p>
+  <p>Correo: camilo1452@educativo.com</p>
+    <h1>Como estas Hoy?</h1>
+    </div>
+  )
+} 
+
+function EjemploProp (props){
+  console.log(props);
+  return (
+    <div className='persona' 
+    style={{
+      backgroundColor : props.color,
+    }} >
+      
+  <h3>Nombre: {props.nombre}</h3>
+  <p>Edad: {props.edad}</p>
+  <p>Correo: {props.correo}</p>
+    </div>
+  )
+} 
+export default App;
+
+
+
+ <MenuC/>
+
+        <EjemploProp nombre = "alejandra solorzano " correo = "aleja@educativo@gmail.com" telefono = "315548974" edad= "25"  color="pink" />
+
+      
+   <Persona1 nombre = "alejandra" apellido = "solorzano" correo = "aleja@educativo@gmail.com"  direccion ="cra 81 f # 6816 "telefono = "315548974"   color="pink" />
